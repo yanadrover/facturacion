@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --bg-color: #fcfaf7;
+  --gold: #B89E78;
+  --charcoal: #3a3a3a;
+  --light-blue: #4a90e2;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  font-family: 'Inter', sans-serif;
+  color: var(--charcoal);
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.input-panel {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  color: var(--charcoal);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input, textarea {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(184, 158, 120, 0.2);
+}
+
+.action-btn {
+  background: var(--charcoal);
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  margin-top: 10px;
+}
+
+.action-btn:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+.preview-panel {
+  position: sticky;
+  top: 40px;
+  background: var(--bg-color);
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+/* Factura Preview Styles */
+.invoice-sheet {
+  width: 100%;
+  aspect-ratio: 1 / 1.41;
+  background: var(--bg-color);
+  padding: 60px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.logo-section {
+  width: 80px;
+}
+
+.title-section {
+  text-align: right;
+}
+
+.factura-title {
+  color: var(--light-blue);
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.factura-no {
+  color: var(--light-blue);
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.issuer-details {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.client-section {
+  margin: 40px 0;
+}
+
+.client-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.concept-box {
+  margin: 40px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.concept-title {
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.calc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.calc-table td {
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.calc-table td:last-child {
+  text-align: right;
+  width: 150px;
+}
+
+.total-row {
+  font-weight: 800;
+}
+
+.bank-details {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.footer-note {
+  margin-top: 60px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.dandelion-decor {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 150px;
+  opacity: 0.6;
+}
